@@ -1,0 +1,225 @@
+@import "./fonts.css";
+@import "./reset.css";
+@import "./common.css";
+
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  max-width: 766px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* ----- 헤더 ----- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background: #fff;
+  /* transition: transform .2s; */
+  max-width: 766px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header.fixed{
+  position: fixed;
+}
+header.fixed.hide{
+  transform: translateY(-100%);
+  /* transition: transform 0s; */
+}
+header .group-flex {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #eaedef;
+  padding: 0 16px 0;
+}
+header .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .logo-img{
+  height: 26px;
+}
+
+header .btn-gnb {
+  font-size: 14px;
+}
+
+
+/* ------------------- */
+.customer-area .cart{
+  margin-left: 10px;
+}
+
+.top-gnb {
+  border-bottom: 1px solid #eaedef;
+  padding: 0 16px 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.top-gnb .top-gnb-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-gnb .top-gnb-item{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
+  scroll-snap-align: start;
+}
+.top-gnb .top-gnb-item .link {
+  display: block;
+  padding: 0px 5px;
+  margin: 0 2px;
+}
+.top-gnb .top-gnb-item .active {
+  position: relative;
+  font-weight: 700;
+  color: #35C5F0;
+}
+.top-gnb .top-gnb-item .active::after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #35C5F0;
+  transition: .2s;
+  transform: scale(1);
+}
+.top-gnb .top-gnb-item .link .beta{
+  font-size: 10px;
+  padding: 2px 4px;
+  color: #fff;
+  background-color: rgb(130,140,148);
+  font-weight: 700;
+  border-radius: 4px;
+  margin-left: 3px;
+}
+
+
+/* ----- 푸터 ----- */
+footer {
+  background: rgb(247,249,250);
+  padding: 30px 0;
+}
+footer .common-inner {
+  display: grid;
+  row-gap: 20px;
+}
+.contact-area {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.contact-area .headline{
+  font-size: 18px;
+  font-weight: 700;
+  gap: 2px;
+  align-items: center;
+  line-height: 24px;
+}
+.contact-area .headline:hover{
+  text-decoration: underline;
+}
+.contact-area .contact {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact-area .tel{
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-right: 6px;
+}
+.contact-area .tel:hover{
+  text-decoration: underline;
+}
+.contact-area .tel .time {
+  font-size: 14px;
+}
+.contact-area .time{
+}
+.contact-area .week{
+  margin-top: 8px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+.contact-area .btn-qna {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 20px;
+  height: 32px;
+  font-weight: 400;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0 8px;
+  align-items: center;
+}
+.contact-area .btn-qna+.btn-qna{
+  margin-left: 12px;
+}
+
+.nav-area {
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 20px;
+  color: rgb(47, 52, 56);
+  border-bottom: 1px solid #ddd;
+}
+.nav-area .nav-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-area .nav-list .nav-item{
+  margin: 8px 12px 8px 0;
+}
+.nav-area .nav-list .nav-item:hover{
+  text-decoration: underline;
+}
+.nav-area .nav-list .nav-item:nth-child(4){
+  font-weight: bold;
+}
+.nav-area .nav-list{}
+
+.group-info {}
+.group-info .btn {
+  font-weight: 700;
+}
+.group-info .addr-area {
+  margin-top: 12px;
+  line-height: 20px;
+  color: rgb(130,140,148);
+}
+.group-info .addr-area .data{
+  font-weight: bold;
+}
+.group-info .desc {
+  display: block;
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+  color: rgb(130,140,148);
+}
+.group-info .desc .service-join {
+  font-weight: 700;
+}
+.group-info .copy {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+  color: rgb(130,140,148);
+}

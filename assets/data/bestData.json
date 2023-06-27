@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "thumb": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/162303132447303472.jpeg?gif=1&w=360&h=360&c=c&q=0.8",
+      "brand": "아엠홈",
+      "desc": "비침 없는 도톰 레이스/쉬폰커튼",
+      "delivery": false,
+      "sale": true,
+      "type":["deco","fabric"]
+    },
+    {
+      "thumb": "./assets/images/best02.webp",
+      "brand": "퀵슬립",
+      "desc": "Q4 유로탑 롤팩 매트리스 2size",
+      "delivery": true,
+      "sale": true,
+      "type":["furniture","fabric"]
+    },
+    {
+      "thumb": "./assets/images/best03.webp",
+      "brand": "휴도",
+      "desc": "편안한 제주 25cm 필로우탑 본넬스프링 매트리스",
+      "delivery": false,
+      "sale": true,
+      "type":["furniture","fabric"]
+    }
+  ]
+}

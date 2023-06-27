@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의집-Mob</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/OhouseIcon.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="https://assets.ohou.se/web/assets/favicon.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="group-flex">
+          <h1 class="logo">
+            <a href="">
+              <svg class="logo-img" width="74" height="30" viewBox="0 0 74 30" preserveAspectRatio="xMidYMid meet">
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    fill="#000"
+                    d="M14.2 25.17H9.28V20.7a1.45 1.45 0 0 0-2.9 0v4.47H1.44a1.45 1.45 0 1 0 0 2.9H14.2a1.45 1.45 0 0 0 0-2.9M4.5 9.15c0-4.6 2.08-5.28 3.33-5.28 1.24 0 3.33.69 3.33 5.28v.36c0 4.6-2.09 5.28-3.33 5.28-1.25 0-3.34-.69-3.34-5.28v-.36zm3.33 8.54c3.84 0 6.23-3.13 6.23-8.18v-.36c0-5.05-2.39-8.18-6.23-8.18-3.85 0-6.24 3.13-6.24 8.18v.36c0 5.05 2.39 8.19 6.24 8.19zm25.54-7.34H17.81a1.45 1.45 0 0 0 0 2.9h15.56a1.45 1.45 0 1 0 0-2.9m-1.55 15.5c-7.08 1.83-9.45.79-10.14.25-.45-.35-.65-.8-.65-1.48v-.87h10.25c.8 0 1.46-.65 1.46-1.45v-5.08c0-.8-.66-1.45-1.46-1.45h-11.7a1.45 1.45 0 1 0 0 2.9h10.25v2.18H19.57c-.8 0-1.45.65-1.45 1.45v2.32a4.6 4.6 0 0 0 1.78 3.78c1.2.93 2.94 1.39 5.21 1.39 2.05 0 4.54-.38 7.44-1.13a1.45 1.45 0 1 0-.73-2.82M20.3 7.83h10.8a1.45 1.45 0 1 0 0-2.9h-9.35V1.45a1.45 1.45 0 1 0-2.9 0v4.93c0 .8.65 1.45 1.45 1.45"
+                  ></path>
+                  <rect width="3" height="15" x="70" fill="#000" rx="1.5"></rect>
+                  <path
+                    fill="#000"
+                    d="M64.5 13.28a1.45 1.45 0 0 0 2.73-1c-.05-.13-1-2.68-3.38-4.5l3.7-4.1a1.45 1.45 0 0 0-1.09-2.42h-9.05a1.45 1.45 0 1 0 0 2.9h5.8l-6.88 7.64a1.45 1.45 0 1 0 2.16 1.95l3.41-3.8a8 8 0 0 1 2.6 3.33M69.56 26.52h-7.01a.82.82 0 0 1-.82-.82v-1.95h8.65v1.95c0 .45-.37.82-.82.82m2.27-9.37c-.8 0-1.45.65-1.45 1.45v2.25h-8.65V18.6a1.45 1.45 0 1 0-2.9 0v7.1a3.73 3.73 0 0 0 3.72 3.72h7.01a3.73 3.73 0 0 0 3.72-3.72v-7.1c0-.8-.65-1.45-1.45-1.45M42.46 3.87c2.22 0 2.33 4.24 2.33 5.08 0 .85-.11 5.09-2.33 5.09-2.21 0-2.32-4.24-2.32-5.08 0-.86.11-5.09 2.32-5.09m0 13.07c1.76 0 3.23-.93 4.14-2.62.71-1.34 1.1-3.2 1.1-5.36s-.39-4.02-1.1-5.37A4.6 4.6 0 0 0 42.46.97c-1.76 0-3.22.93-4.13 2.62-.72 1.35-1.1 3.2-1.1 5.37s.38 4.01 1.1 5.36a4.59 4.59 0 0 0 4.13 2.62"
+                  ></path>
+                  <path fill="#000" d="M51.4.49c-.8 0-1.45.65-1.45 1.45v17.78c-1.93.6-5.75 1.13-10.38 1.13h-2.2a1.45 1.45 0 0 0 0 2.9h2.2c2.64 0 7.21-.23 10.38-1.02v4.84a1.45 1.45 0 0 0 2.9 0V1.94c0-.8-.65-1.45-1.45-1.45"></path>
+                </g>
+              </svg>
+              <span class="blind">오늘의집</span>
+            </a>
+          </h1>
+          <button class="btn-gnb">
+            <i class="ic-font _menu_24"></i>
+            <span class="blind">메뉴 열기</span>
+          </button>
+
+          <div class="customer-area">
+            <a href="" class="search">
+              <i class="ic-font _search_24"></i>
+              <span class="blind">검색하기</span></a
+            >
+            <a href="" class="cart">
+              <i class="ic-font _cart_24"></i>
+              <span class="blind">장바구니</span></a
+            >
+          </div>
+        </div>
+
+        <nav class="top-gnb">
+          <ul class="top-gnb-list">
+            <li class="top-gnb-item"><a href="" class="link active">홈</a></li>
+            <li class="top-gnb-item"><a href="" class="link">팔로잉</a></li>
+            <li class="top-gnb-item"><a href="" class="link">사진</a></li>
+            <li class="top-gnb-item"><a href="" class="link">집들이</a></li>
+            <li class="top-gnb-item"><a href="" class="link">노하우</a></li>
+            <li class="top-gnb-item"><a href="" class="link">전문가집들이</a></li>
+            <li class="top-gnb-item"><a href="" class="link">셀프가이드</a></li>
+            <li class="top-gnb-item"><a href="" class="link">질문과답변</a></li>
+            <li class="top-gnb-item">
+              <a href="" class="link">3D인테리어<span class="beta">BETA</span></a>
+            </li>
+            <li class="top-gnb-item"><a href="" class="link">이벤트</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        
+        <div class="common-inner">
+          <span class="bg"></span>
+          <aside class="gnb">
+            <div class="group-login">
+              <a href="">
+                <svg class="logo-img" width="74" height="30" viewBox="0 0 74 30" preserveAspectRatio="xMidYMid meet">
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#000"
+                      d="M14.2 25.17H9.28V20.7a1.45 1.45 0 0 0-2.9 0v4.47H1.44a1.45 1.45 0 1 0 0 2.9H14.2a1.45 1.45 0 0 0 0-2.9M4.5 9.15c0-4.6 2.08-5.28 3.33-5.28 1.24 0 3.33.69 3.33 5.28v.36c0 4.6-2.09 5.28-3.33 5.28-1.25 0-3.34-.69-3.34-5.28v-.36zm3.33 8.54c3.84 0 6.23-3.13 6.23-8.18v-.36c0-5.05-2.39-8.18-6.23-8.18-3.85 0-6.24 3.13-6.24 8.18v.36c0 5.05 2.39 8.19 6.24 8.19zm25.54-7.34H17.81a1.45 1.45 0 0 0 0 2.9h15.56a1.45 1.45 0 1 0 0-2.9m-1.55 15.5c-7.08 1.83-9.45.79-10.14.25-.45-.35-.65-.8-.65-1.48v-.87h10.25c.8 0 1.46-.65 1.46-1.45v-5.08c0-.8-.66-1.45-1.46-1.45h-11.7a1.45 1.45 0 1 0 0 2.9h10.25v2.18H19.57c-.8 0-1.45.65-1.45 1.45v2.32a4.6 4.6 0 0 0 1.78 3.78c1.2.93 2.94 1.39 5.21 1.39 2.05 0 4.54-.38 7.44-1.13a1.45 1.45 0 1 0-.73-2.82M20.3 7.83h10.8a1.45 1.45 0 1 0 0-2.9h-9.35V1.45a1.45 1.45 0 1 0-2.9 0v4.93c0 .8.65 1.45 1.45 1.45"
+                    ></path>
+                    <rect width="3" height="15" x="70" fill="#000" rx="1.5"></rect>
+                    <path
+                      fill="#000"
+                      d="M64.5 13.28a1.45 1.45 0 0 0 2.73-1c-.05-.13-1-2.68-3.38-4.5l3.7-4.1a1.45 1.45 0 0 0-1.09-2.42h-9.05a1.45 1.45 0 1 0 0 2.9h5.8l-6.88 7.64a1.45 1.45 0 1 0 2.16 1.95l3.41-3.8a8 8 0 0 1 2.6 3.33M69.56 26.52h-7.01a.82.82 0 0 1-.82-.82v-1.95h8.65v1.95c0 .45-.37.82-.82.82m2.27-9.37c-.8 0-1.45.65-1.45 1.45v2.25h-8.65V18.6a1.45 1.45 0 1 0-2.9 0v7.1a3.73 3.73 0 0 0 3.72 3.72h7.01a3.73 3.73 0 0 0 3.72-3.72v-7.1c0-.8-.65-1.45-1.45-1.45M42.46 3.87c2.22 0 2.33 4.24 2.33 5.08 0 .85-.11 5.09-2.33 5.09-2.21 0-2.32-4.24-2.32-5.08 0-.86.11-5.09 2.32-5.09m0 13.07c1.76 0 3.23-.93 4.14-2.62.71-1.34 1.1-3.2 1.1-5.36s-.39-4.02-1.1-5.37A4.6 4.6 0 0 0 42.46.97c-1.76 0-3.22.93-4.13 2.62-.72 1.35-1.1 3.2-1.1 5.37s.38 4.01 1.1 5.36a4.59 4.59 0 0 0 4.13 2.62"
+                    ></path>
+                    <path fill="#000" d="M51.4.49c-.8 0-1.45.65-1.45 1.45v17.78c-1.93.6-5.75 1.13-10.38 1.13h-2.2a1.45 1.45 0 0 0 0 2.9h2.2c2.64 0 7.21-.23 10.38-1.02v4.84a1.45 1.45 0 0 0 2.9 0V1.94c0-.8-.65-1.45-1.45-1.45"></path>
+                  </g>
+                </svg>
+                <span class="blind">오늘의집</span></a
+              >
+              <a href="" class="link-download">앱다운로드<i class="ic-font _chevron_right_12"></i></a>
+
+              <div class="sub-area">
+                <a href="" class="link-login">로그인</a>
+                <a href="" class="link-join">회원가입</a>
+              </div>
+            </div>
+            <ul class="gnb-list">
+              <li class="gnb-item">
+                <button class="btn">커뮤니티</button>
+                <div class="gnb-area">
+                  <ul class="sub-list">
+                    <li class="sub-item"><a href="">홈</a></li>
+                    <li class="sub-item"><a href="">팔로잉</a></li>
+                    <li class="sub-item"><a href="">사진</a></li>
+                    <li class="sub-item"><a href="">집들이</a></li>
+                    <li class="sub-item"><a href="">노하우</a></li>
+                    <li class="sub-item"><a href="">전문가집들이</a></li>
+                    <li class="sub-item"><a href="">셀프가이드</a></li>
+                    <li class="sub-item"><a href="">질문과답변</a></li>
+                    <li class="sub-item"><a href="">3D인테리어</a></li>
+                    <li class="sub-item"><a href="">이벤트</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-item">
+                <button class="btn">쇼핑</button>
+                <div class="gnb-area">
+                  <ul class="sub-list">
+                    <li class="sub-item"><a href="">쇼핑홈</a></li>
+                    <li class="sub-item ctg">
+                      <button class="btn-ctg">카테고리</button>
+                      <ul class="ctg-list">
+                        <li class="ctg-item"><a href="">가구</a></li>
+                        <li class="ctg-item"><a href="">패브릭</a></li>
+                        <li class="ctg-item"><a href="">가전·디지털</a></li>
+                        <li class="ctg-item"><a href="">주방용품</a></li>
+                        <li class="ctg-item"><a href="">식품</a></li>
+                        <li class="ctg-item"><a href="">데코·식물</a></li>
+                        <li class="ctg-item"><a href="">조명</a></li>
+                        <li class="ctg-item"><a href="">수납·정리</a></li>
+                        <li class="ctg-item"><a href="">생활용품</a></li>
+                        <li class="ctg-item"><a href="">생필품</a></li>
+                        <li class="ctg-item"><a href="">유아·아동</a></li>
+                        <li class="ctg-item"><a href="">반려동물</a></li>
+                        <li class="ctg-item"><a href="">캠핑·레저</a></li>
+                        <li class="ctg-item"><a href="">공구·DIY</a></li>
+                        <li class="ctg-item"><a href="">인테리어시공</a></li>
+                        <li class="ctg-item"><a href="">렌탈</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-item"><a href="">베스트</a></li>
+                    <li class="sub-item"><a href="">오늘의딜</a></li>
+                    <li class="sub-item"><a href="">리퍼마켓</a></li>
+                    <li class="sub-item"><a href="">오!굿즈</a></li>
+                    <li class="sub-item"><a href="">오시즌위크</a></li>
+                    <li class="sub-item"><a href="">오!쇼룸</a></li>
+                    <li class="sub-item"><a href="">프리미엄</a></li>
+                    <li class="sub-item"><a href="">기획전</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-item">
+                <button class="btn">이사/시공/수리</button>
+                <div class="gnb-area">
+                  <ul class="sub-list">
+                    <li class="sub-item"><a href="">홈</a></li>
+                    <li class="sub-item"><a href="">인테리어시공</a></li>
+                    <li class="sub-item"><a href="">이사</a></li>
+                    <li class="sub-item"><a href="">설치수리</a></li>
+                    <li class="sub-item"><a href="">우리동네아파트</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="user-list">
+              <li class="user-item"><a href="">마이페이지</a></li>
+              <li class="user-item"><a href="">나의 쇼핑</a></li>
+              <li class="user-item"><a href="">스크랩북</a></li>
+              <li class="user-item"><a href="">알림</a></li>
+              <li class="user-item"><a href="">이벤트</a></li>
+              <li class="user-item"><a href="">사진 올리기</a></li>
+              <li class="user-item"><a href="">집들이 글쓰기</a></li>
+              <li class="user-item"><a href="">노하우 글쓰기</a></li>
+              <li class="user-item"><a href="">상품 리뷰 쓰기</a></li>
+              <li class="user-item"><a href="">시공 전문가 리뷰 쓰기</a></li>
+              <li class="user-item"><a href="">인테리어 질문하기</a></li>
+              <li class="user-item"><a href="">고객센터</a></li>
+            </ul>
+            <div class="group-request">
+              <a href="">전문가 신청</a>
+              <a href="">판매자 신청</a>
+            </div>
+          </aside>
+          <section class="sc-visual">
+            <h2 class="blind">광고 모음 슬라이드</h2>
+            <div class="group-slide swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide01.avif" alt="전국민 집꾸미기 특가 시즌 O! 시즌위크 ~89%" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide02.avif" alt="셀럽들의 집 속 그 제품 매일 0원 득템 기회 오픈" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide03.avif" alt="자주 쓰는 살림템만 쏙쏙 쟁여두기 마켓 초특가 UP TO 83%" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide04.avif" alt="가구부터 생활템까지 TOP 브랜드 특가 릴레이" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide05.avif" alt="10명 중 9명이 만족한 오늘의집으로 이사가요" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide06.avif" alt="입주이사 입주이사 박람회에서 리모델링/입주/이사 원스톱 해결!" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide07.avif" alt="사진 올리면 100% 포인트! 오늘의 우리집 콘테스트" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide08.avif" alt="취미사진 올리면 포인트 100% 집콕 취미 콘테스트" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide09.webp" alt="오늘의집에서 구매한 적이 없으세요? 첫 구매 최대 2만 원 할인" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide10.avif" alt="결제 전 확인 필수! 2월 결제 혜택 모아보기" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide11.avif" alt="구매할수록 포인트가 팡팡 2월 포인트 혜택 받아가세요" /></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href=""><img src="./assets/images/slide/slide12.webp" alt="댓글만 달아도 포인트를 준다고? 월간댓글 이벤트" /></a>
+                </li>
+              </ul>
+              <div class="control-area">
+                <div class="fraction">1 / 12</div>
+                <a href="" class="btn-all"><span class="blind">전체보기</span></a>
+              </div>
+            </div>
+          </section>
+          <section class="sc-category">
+            <h2 class="blind">메뉴 이동하기</h2>
+            <ul class="ctg-list">
+              <li class="ctg-item">
+                <a href="" class="link shop"> 쇼핑하기 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link week"> 오시즌위크 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link deal"> 오늘의딜 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link style"> 취향의발견 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link food"> 식품관 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link house"> 집들이 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link series"> 꿀잼시리즈 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link del"> 빠른배송 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link move"> 쉬운이사 </a>
+              </li>
+              <li class="ctg-item">
+                <a href="" class="link remodeling"> 리모델링 </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-post">
+            <div class="group-title">
+              <h2 class="headline">미리 준비하는 봄 인테리어 🌱</h2>
+              <a href="" class="btn-all">
+                <i class="ic-font _chevron_thick_right_24"></i>
+                <span class="blind">전체보기</span>
+              </a>
+            </div>
+            <ul class="post-list">
+              <!-- json 데이터 값 -->
+            </ul>
+          </section>
+        </div>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-post">
+            <div class="group-title">
+              <h2 class="headline">유행보다 취향을 담은 집 💖</h2>
+              <a href="" class="btn-all">
+                <i class="ic-font _chevron_thick_right_24"></i>
+                <span class="blind">전체보기</span>
+              </a>
+            </div>
+            <ul class="post-list">
+              <li class="post-item">
+                <div class="img-box">
+                  <a href="">
+                    <img src="./assets/images/post05.avif" alt="" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <strong>산을 품고 하늘과 맞닿은 💒 </strong>
+                  푸드 디렉터의 주택
+                </a>
+              </li>
+              <li class="post-item">
+                <div class="img-box">
+                  <a href="">
+                    <img src="./assets/images/post06.avif" alt="" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <strong>넓고 탁 트인 20평대 </strong>
+                  수납으로 더 깔끔하게!
+                </a>
+              </li>
+              <li class="post-item">
+                <div class="img-box">
+                  <a href="">
+                    <img src="./assets/images/post07.avif" alt="" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <strong>24평 내추럴 🍀 </strong>
+                  싱그러움이 녹아든 집
+                </a>
+              </li>
+              <li class="post-item">
+                <div class="img-box">
+                  <a href="">
+                    <img src="./assets/images/post08.jpg" alt="" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <strong>채광 맛집 30평대 </strong>
+                  깔끔하면서도 따뜻한 집
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-goods">
+            <h2 class="headline">카테고리별 상품 찾기</h2>
+            <ul class="goods-list">
+              <li class="goods-item">
+                <a href="" class="furniture"><span>가구</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="fabric"><span>패브릭</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="digital"><span>가전·디지털</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="kitchen"><span>주방용품</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="food"><span>식품</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="deco"><span>데코·식물</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="light"><span>조명</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="store"><span>수납·정리</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="daily"><span>생활용품</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="necess"><span>생필품</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="kid"><span>유아·아동</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="furry"><span>반려동물</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="camp"><span>캠핑·레저</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="diy"><span>공구·DIY</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="build"><span>인테리어시공</span></a>
+              </li>
+              <li class="goods-item">
+                <a href="" class="rental"><span>렌탈</span></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-deal">
+            <div class="group-title">
+              <h2 class="headline">오늘의딜</h2>
+              <a href="" class="btn-all">
+                <i class="ic-font _chevron_thick_right_24"></i>
+                <span class="blind">전체보기</span>
+              </a>
+            </div>
+            <ul class="deal-list">
+              <li class="deal-item">
+                <div class="img-box">
+                  <a href="" class="link-deal">
+                    <span class="timer">00:00:00 남음</span>
+                    <span class="badge">
+                      <img src="./assets/images/deal-badge.avif" alt="" />
+                    </span>
+                    <img src="./assets/images/deal01.webp" alt="" class="deal-img" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <em class="brand">센스큐</em>
+                  <p>[쿠폰가 28,900원+봉투2롤][오늘의딜]올케이 실링&컷팅 올케이 휴지통 29L</p>
+                  <div class="review-wrap">
+                    <em>4.7</em>
+                    <span>리뷰 4,770</span>
+                  </div>
+                  <div class="price-wrap">
+                    <em class="discount">51%</em>
+                    <span class="price">38,900</span>
+                  </div>
+                  <div class="delivery-wrap">
+                    <span>평일 14:00까지 결제시</span>
+                    <div class="badge-box">
+                      <span class="free">무료배송</span>
+                      <span class="sale">특가</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="deal-item">
+                <div class="img-box">
+                  <a href="" class="link-deal">
+                    <span class="timer">00:00:00 남음</span>
+                    <span class="badge">
+                      <img src="./assets/images/deal-badge.avif" alt="" />
+                    </span>
+                    <img src="./assets/images/deal02.avif" alt="" class="deal-img" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <em class="brand">폴레드</em>
+                  <p>[3만원 쿠폰] 볼픽스Pro 프리미엄 주니어 카시트+킥매트 증정 외 특가모음전</p>
+                  <div class="review-wrap">
+                    <em>4.7</em>
+                    <span>리뷰 4,770</span>
+                  </div>
+                  <div class="price-wrap">
+                    <em class="discount">44%</em>
+                    <span class="price">279,000 외</span>
+                  </div>
+                  <div class="badge-box">
+                    <span class="free">무료배송</span>
+                    <span class="sale">특가</span>
+                  </div>
+                </a>
+              </li>
+              <li class="deal-item">
+                <div class="img-box">
+                  <a href="" class="link-deal">
+                    <span class="timer">00:00:00 남음</span>
+                    <span class="badge">
+                      <img src="./assets/images/deal-badge.avif" alt="" />
+                    </span>
+                    <img src="./assets/images/deal03.webp" alt="" class="deal-img" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <em class="brand">로보락</em>
+                  <p>[원데이특가] 로보락 S7 Plus 물걸레 로봇청소기</p>
+                  <div class="review-wrap">
+                    <em>4.7</em>
+                    <span>리뷰 4,770</span>
+                  </div>
+                  <div class="price-wrap">
+                    <em class="discount">15%</em>
+                    <span class="price">799,000 외</span>
+                  </div>
+                  <div class="badge-box">
+                    <span class="free">무료배송</span>
+                    <span class="sale">특가</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a href="" class="link-more">오늘의 딜 더보기</a>
+            <!-- 링크 모어로 수정 -->
+          </section>
+        </div>
+        <hr />
+        <section class="sc-banner">
+          <h2 class="blind">이벤트 배너</h2>
+          <img src="./assets/images/banner.avif" alt="전국민 집꾸미기 특가 시즌, O! 시즌위크 ~89%" />
+        </section>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-top-ten">
+            <div class="group-title">
+              <div class="inner">
+                <h2 class="tt-headline">인기 사진 TOP 10</h2>
+                <p class="desc">매일 1, 2, 3위에게 최대 1,000P 지급!</p>
+              </div>
+              <a href="" class="btn-all">
+                <i class="ic-font _chevron_thick_right_24"></i>
+                <span class="blind">전체보기</span>
+              </a>
+            </div>
+            <div class="swiper">
+              <ul class="top-ten-list swiper-wrapper">
+                <li class="top-ten-item swiper-slide">
+                  <div class="img-box">
+                    <a href="">
+                      <em class="number">1</em>
+                      <span class="user">sund_home</span>
+                      <img src="./assets/images/topten01.avif" alt="" />
+                    </a>
+                    <button class="btn-scrap">
+                      <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_15409_67579)">
+                          <g filter="url(#filter0_d_15409_67579)">
+                            <path
+                              d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                              fill="white"
+                            ></path>
+                            <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                          </g>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                          </filter>
+                          <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="top-ten-item swiper-slide">
+                  <div class="img-box">
+                    <a href="">
+                      <em class="number">2</em>
+                      <span class="user">몽찌홈</span>
+                      <img src="./assets/images/topten02.avif" alt="" />
+                    </a>
+                    <button class="btn-scrap">
+                      <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_15409_67579)">
+                          <g filter="url(#filter0_d_15409_67579)">
+                            <path
+                              d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                              fill="white"
+                            ></path>
+                            <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                          </g>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                          </filter>
+                          <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="top-ten-item swiper-slide">
+                  <div class="img-box">
+                    <a href="">
+                      <em class="number">3</em>
+                      <span class="user">해시브라운</span>
+                      <img src="./assets/images/topte03.avif" alt="" />
+                    </a>
+                    <button class="btn-scrap">
+                      <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_15409_67579)">
+                          <g filter="url(#filter0_d_15409_67579)">
+                            <path
+                              d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                              fill="white"
+                            ></path>
+                            <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                          </g>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                          </filter>
+                          <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="top-ten-item swiper-slide">
+                  <div class="img-box">
+                    <a href="">
+                      <em class="number">4</em>
+                      <span class="user">userid</span>
+                      <img src="./assets/images/topten02.avif" alt="" />
+                    </a>
+                    <button class="btn-scrap">
+                      <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_15409_67579)">
+                          <g filter="url(#filter0_d_15409_67579)">
+                            <path
+                              d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                              fill="white"
+                            ></path>
+                            <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                          </g>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                          </filter>
+                          <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-review">
+            <div class="group-title">
+              <h2 class="headline">유저들의 인테리어 시공 리뷰</h2>
+              <a href="" class="btn-all">
+                <i class="ic-font _chevron_thick_right_24"></i>
+                <span class="blind">전체보기</span>
+              </a>
+            </div>
+            <ul class="review-list">
+              <li class="review-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="./assets/images/review01.avif" alt="" />
+                  </div>
+                </a>
+                <a href="" class="text-box">
+                  <em>봄인테리어</em>
+                  <p class="review">
+                    5군데 업체에서 견적을 받았어요. 첫 방문에 실측하시면서 저희가 원하는 것 하나하나 시스템에어컨, 거실 베란다, 현관문 작은 방 확장, 600각 타일, 졸리컷 화장실... 바로바로 신경 써서 5군데 업체에서 견적을 받았어요. 첫 방문에
+                    실측하시면서 저희가 원하는 것 하나하나 시스템에어컨, 거실 베란다, 현관문 작은 방 확장, 600각 타일, 졸리컷 화장실... 바로바로 신경 써서
+                  </p>
+                </a>
+              </li>
+              <li class="review-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="./assets/images/review02.avif" alt="" />
+                  </div>
+                </a>
+                <a href="" class="text-box">
+                  <em>인바이디자인 분당점</em>
+                  <p class="review">
+                    출산이랑 육아 때문에 이제야 후기를 써요. 임신 6개월 때쯤 상담했는데 그 애기가 벌써 4개월이네요..! ㅋㅋ 일단 정말 계약 전 상담부터 AS까지 친절하고 섬세하게 대응해 주셔서 너무 좋았어요. 인테리어가 어쩌구저쩌구 너무 힘들다
+                    이거는 리액트로 만든 건가요 출산이랑 육아 때문에 이제야 후기를 써요. 임신 6개월 때쯤 상담했는데 그 애기가 벌써 4개월이네요..! ㅋㅋ 일단 정말 계약 전 상담부터 AS까지 친절하고 섬세하게 대응해 주셔서 너무 좋았어요.
+                    인테리어가 어쩌구저쩌구 너무 힘들다 이거는 리액트로 만든 건가요
+                  </p>
+                </a>
+              </li>
+              <li class="review-item">
+                <a href="">
+                  <div class="img-box">
+                    <img src="./assets/images/review03.avif" alt="" />
+                  </div>
+                </a>
+                <a href="" class="text-box">
+                  <em>디자인 그리다</em>
+                  <p class="review">
+                    처음 상담 때 저희가 우려했던 부분을 고려해서 상담 및 시공 진행을 해 주셨어요. 옛날 아파트라 시공 과정 중에 추가 비용이 많이 있을까 봐 걱정했으나 예산에서 크게 벗어나지 않도록 최대한 배려를 해 주셨어요. 워낙에
+                    어쩌구저쩌구솰라솰라꾸웨엑? 처음 상담 때 저희가 우려했던 부분을 고려해서 상담 및 시공 진행을 해 주셨어요. 옛날 아파트라 시공 과정 중에 추가 비용이 많이 있을까 봐 걱정했으나 예산에서 크게 벗어나지 않도록 최대한 배려를 해
+                    주셨어요. 워낙에 어쩌구저쩌구솰라솰라꾸웨엑?
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <a href="" class="link-more">인테리어 시공업체 찾기</a>
+          </section>
+        </div>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-product">
+            <div class="group-title">
+              <h2 class="headline">오늘의 기획전</h2>
+              <a href="" class="btn-all">
+                <i class="ic-font _chevron_thick_right_24"></i>
+                <span class="blind">전체보기</span>
+              </a>
+            </div>
+            <ul class="product-list">
+              <li class="product-item">
+                <a href="" class="link">
+                  <div class="img-box">
+                    <img src="./assets/images/product01.avif" alt="" />
+                  </div>
+                  <div class="text-box">
+                    <strong>할인할 때! 쟁여두기 마켓 ~83%</strong>
+                  </div>
+                </a>
+              </li>
+              <li class="product-item">
+                <a href="" class="link">
+                  <div class="img-box">
+                    <img src="./assets/images/product02.avif" alt="" />
+                  </div>
+                  <div class="text-box">
+                    <span>1천개 상품 특가 찬스!</span>
+                    <strong>[O!시즌위크] 가구 쇼핑대축제 ~89%</strong>
+                  </div>
+                </a>
+              </li>
+              <li class="product-item">
+                <a href="" class="link">
+                  <div class="img-box">
+                    <img src="./assets/images/product03.avif" alt="" />
+                  </div>
+                  <div class="text-box">
+                    <span>쿠쿠·로보락 등 인기브랜드 최대 할인!</span>
+                    <strong>[O!시즌위크] 가전 BIG SALE ~70%</strong>
+                  </div>
+                </a>
+              </li>
+              <li class="product-item">
+                <a href="" class="link">
+                  <div class="img-box">
+                    <img src="./assets/images/product04.avif" alt="" />
+                  </div>
+                  <div class="text-box">
+                    <span>250여개 브랜드 특가, 최대 15% 브랜드 쿠폰까지</span>
+                    <strong>[O!시즌위크] 상반기 최대 주방 할인전 ~84%</strong>
+                  </div>
+                </a>
+              </li>
+              <li class="product-item">
+                <a href="" class="link">
+                  <div class="img-box">
+                    <img src="./assets/images/product05.avif" alt="" />
+                  </div>
+                  <div class="text-box">
+                    <span>지금 바꾸기 좋은 봄이불/침구세트/커튼/러그</span>
+                    <strong>[O!시즌위크] S/S NEW 시즌 패브릭 ~76%</strong>
+                  </div>
+                </a>
+              </li>
+              <li class="product-item">
+                <a href="" class="link">
+                  <div class="img-box">
+                    <img src="./assets/images/product06.avif" alt="" />
+                  </div>
+                  <div class="text-box">
+                    <span>집 꾸미기의 모든 것! 인기 특가템을 한자리에</span>
+                    <strong>[O!시즌위크] 봄맞이 인테리어키워드 ~83%</strong>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a href="" class="link-more">기획전 더보기</a>
+          </section>
+        </div>
+        <hr />
+        <div class="common-inner">
+          <section class="sc-best">
+            <div class="group-title">
+              <h2 class="headline">베스트</h2>
+              <a href="" class="btn-all">
+                <i class="ic-font _chevron_thick_right_24"></i>
+                <span class="blind">전체보기</span>
+              </a>
+            </div>
+            <ul class="best-gnb-list">
+              <li class="best-gnb-item active">
+                <a href="" data-best="all">전체</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="" data-best="furniture">가구</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="" data-best="fabric">패브릭</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">가전·디지털</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">주방용품</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">식품</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="" data-best="deco">데코·식물</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">조명</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">수납·정리</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">생활용품</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">생필품</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">유아·아동</a>
+              </li>
+              <li class="best-gnb-item">
+                <a href="">반려동물</a>
+              </li>
+            </ul>
+            <ul class="best-list">
+              <!-- <li class="best-item">
+                <div class="img-box">
+                  <a href="" data-best="furniture">
+                    <em class="number">1</em>
+                    <span class="badge">
+                      <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/admins/thumbnail_badges/167633960040654859.png?w=360&h=360&c=c&webp=1" alt="" />
+                    </span>
+                    <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/162303132447303472.jpeg?gif=1&w=360&h=360&c=c&q=0.8" alt="" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <em class="brand">아엠홈</em>
+                  <strong>[오늘의딜][5% 쿠폰] 비침 없는 도톰 레이스/쉬폰커튼</strong>
+                  <div class="price-wrap">
+                    <em class="discount">55%</em>
+                    <span class="price">19,900</span>
+                  </div>
+                  <div class="review-wrap">
+                    <em>4.7</em>
+                    <span>리뷰 22,420</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <span class="sale">특가</span>
+                  </div>
+                </a>
+              </li>
+              <li class="best-item">
+                <div class="img-box">
+                  <a href="">
+                    <em class="number">2</em>
+                    <span class="badge">
+                      <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/admins/thumbnail_badges/167633960040654859.png?w=360&h=360&c=c&webp=1" alt="" />
+                    </span>
+                    <img src="./assets/images/best02.webp" alt="" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <em class="brand">퀵슬립</em>
+                  <strong>Q4 유로탑 롤팩 매트리스 2size</strong>
+                  <div class="price-wrap">
+                    <em class="discount">58%</em>
+                    <span class="price">295,900</span>
+                  </div>
+                  <div class="review-wrap">
+                    <em>4.7</em>
+                    <span>리뷰 22,420</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <span class="free">무료배송</span>
+                    <span class="sale">특가</span>
+                  </div>
+                </a>
+              </li>
+              <li class="best-item">
+                <div class="img-box">
+                  <a href="">
+                    <em class="number">3</em>
+                    <span class="badge">
+                      <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/admins/thumbnail_badges/167633960040654859.png?w=360&h=360&c=c&webp=1" alt="" />
+                    </span>
+                    <img src="./assets/images/best03.webp" alt="" />
+                  </a>
+                  <button class="btn-scrap">
+                    <svg class="css-whh5e5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_15409_67579)">
+                        <g filter="url(#filter0_d_15409_67579)">
+                          <path
+                            d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z"
+                            fill="white"
+                          ></path>
+                          <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                          <feOffset dy="2"></feOffset>
+                          <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <a href="" class="text-box">
+                  <em class="brand">휴도</em>
+                  <strong>[5% 쿠폰] 편안한 제주 25cm 필로우탑 본넬스프링 매트리스</strong>
+                  <div class="price-wrap">
+                    <em class="discount">55%</em>
+                    <span class="price">108,000</span>
+                  </div>
+                  <div class="review-wrap">
+                    <em>4.7</em>
+                    <span>리뷰 22,420</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <span class="sale">특가</span>
+                  </div>
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <!-- 푸터는 h2 하단 로고급 빼면 h3부터 쓰기 -->
+        <div class="common-inner">
+          <div class="contact-area">
+            <a href="" class="headline">고객센터 <i class="ic-font _chevron_thick_right_12" style="font-size: 12px"></i></a>
+            <div class="contact">
+              <a href="tel:+1670-0876" class="tel">1670-0876</a>
+              <span class="time">09:00~18:00</span>
+            </div>
+            <p class="week">
+              평일: 전체 문의 상담 가능<br />
+              주말, 공휴일: 오늘의집 직접배송, 이사/시공/수리 문의 상담 가능
+            </p>
+            <a href="" class="btn-qna">카톡 상담(평일 09:00~18:00)</a>
+            <a href="" class="btn-qna">이메일 문의</a>
+          </div>
+
+          <div class="nav-area">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="">회사소개</a></li>
+              <li class="nav-item"><a href="">채용정보</a></li>
+              <li class="nav-item"><a href="">이용약관</a></li>
+              <li class="nav-item"><a href="">개인정보 처리방침</a></li>
+              <li class="nav-item"><a href="">공지사항</a></li>
+              <li class="nav-item"><a href="">안전거래센터</a></li>
+              <li class="nav-item"><a href="">입점신청</a></li>
+              <li class="nav-item"><a href="">제휴/광고 문의</a></li>
+              <li class="nav-item"><a href="">사업자 구매 회원</a></li>
+              <li class="nav-item"><a href="">시공파트너 안내</a></li>
+              <li class="nav-item"><a href="">상품광고 소개</a></li>
+              <li class="nav-item"><a href="">고객의 소리</a></li>
+            </ul>
+          </div>
+          <div class="group-info">
+            <button class="btn">(주)버킷플레이스 <i class="ic-font _chevron_thick_down_12" style="font-size: 12px"></i></button>
+            <address class="addr-area">
+              <!-- 대표이사 이승재<br>
+              서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층<br>
+              contact@bucketplace.net<br>
+              사업자등록번호 119-86-91245 사업자정보확인<br>
+              통신판매업신고번호 제2018-서울서초-0580호 -->
+              <p class="addr">대표이사 이승재</p>
+              <p class="addr">서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층</p>
+              <p class="addr"><a href="mailto:contact@bucketplace.net"></a>contact@bucketplace.net</p>
+              <p class="addr">사업자등록번호 119-86-91245 <a href="" class="data">사업자정보확인</a></p>
+              <p class="addr">통신판매업신고번호 제2018-서울서초-0580호</p>
+            </address>
+            <span class="desc">
+              고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다. <a href="" class="service-join">서비스가입사실확인</a>
+              <br />
+              <br />
+              (주)버킷플레이스는 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다. 단, (주)버킷플레이스가 판매자로 등록 판매한 상품은 판매자로서 책임을 부담합니다.
+            </span>
+            <div class="sns-area">
+              <a href="" class="link-sns youtube"><span class="blind">유튜브</span></a>
+              <a href="" class="link-sns insta"><span class="blind">인스타그램</span></a>
+              <a href="" class="link-sns facebook"><span class="blind">페이스북</span></a>
+              <a href="" class="link-sns kakao"><span class="blind">카카오스토리</span></a>
+              <a href="" class="link-sns naver"><span class="blind">네이버 포스트</span></a>
+            </div>
+            <p class="copy">Copyright 2014. bucketplace, Co., Ltd. All rights reserved.</p>
+            <!-- 카피라이트 어드레스 처리한다고 봄 -->
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="./assets/js/data.js"></script>
+      <script src="./assets/js/main.js"></script>
+    </div>
+  </body>
+</html>
